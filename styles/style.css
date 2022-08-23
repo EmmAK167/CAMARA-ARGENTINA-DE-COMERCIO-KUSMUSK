@@ -125,6 +125,7 @@ footer{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    background-image: linear-gradient(to left, red, yellow);
 }
 .entidades__img{
     width: 20%;
@@ -250,6 +251,14 @@ margin-bottom: 10px;
     align-self: center;
     width: 400px;
     height: 400px;
+}
+/* animacion */
+.cajita {
+    transition: all 1s;
+}
+.cajita1:hover {
+    width: 100%;
+    background-color: red;
 }
 /* pantalla hasta 480px */ 
 @media screen and (max-width: 480px) 
