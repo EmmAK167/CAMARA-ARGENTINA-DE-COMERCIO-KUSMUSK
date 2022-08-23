@@ -1,0 +1,163 @@
+    otros----------------------------------------------------------
+    
+    <div class="gradientes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis est unde earum nihil repellendus enim ducimus rem, quidem veniam, esse eveniet! Consectetur natus rem deserunt necessitatibus quaerat impedit? Ratione, voluptate?</div>
+    <div class="container">
+        <div class="classcuadrado transformTranslate">translate 20px 20px</div>
+        <div class="classcuadrado transformRotate">rotate 45°</div>
+        <div class="classcuadrado"></div>
+        <div class="classcuadrado"></div>
+        <div class="classcuadrado transforSkew"></div>
+    </div>
+
+
+
+    galeria---------------------------------------------------------
+
+  <h3>Video de la Cámara Argentina de Comercio</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0x6HYQcDYic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <hr>
+  <h3>Enlace web a la Cámara de Comercio de La Plata</h3>
+  <a target="_blank" href="https://lacamara.org.ar/">Cámara de Comercio La Plata</a>
+  <hr>
+  <h3>Cámara de Comercio de La Plata</h3>
+  <img src="https://scontent.frsa2-1.fna.fbcdn.net/v/t39.30808-6/291337991_5281566815259935_5689871347821544968_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=M9jiy8JdyvIAX8Ztxxr&_nc_ht=scontent.frsa2-1.fna&oh=00_AT9bOHa_3OOpL9_owRP4fiV2bH18iT0Ld4HBeCAdL3QRDA&oe=62E2C7C3" alt="Camará de Comercio de La Plata">
+  <hr/>
+  <h3>Enlace web a la Cámara de Comercio de La Plata</h3>
+  <a target="_blank" href="https://lacamara.org.ar/">Cámara de Comercio La Plata</a>
+ tu cv----------------------------------------------------------------
+
+ <hr>
+  <div class="formulario">
+    <h3 class="formulario__titulo">Dejanos tus datos</h3>
+    <form action="text" class="formulario__general">
+      <div>
+        <label for="Apellido" class="formulario__item">Apellido:</label>
+        <input type="text" id="Apellido" class="formulario__item">
+      </div>
+      <div>
+        <label for="Nombre" class="formulario__item">Nombre:</label>
+        <input type="text" id="Nombre" class="formulario__item">
+      </div>
+      <div>
+        <label for="pais" class="formulario__item">País:</label>
+        <select id="pais" class="formulario__item">
+          <option value="Argentina" class="formulario__item">Argentina</option>
+          <option value="Brasil" class="formulario__item">Brasil</option>
+          <option value="Uruguay" class="formulario__item">Uruguay</option>
+          <option value="Chile" class="formulario__item">Chile</option>
+        </select>
+      </div>
+      <fieldset class="formulario__item">
+        <legend  class="formulario__item">Genero</legend>
+        <div>
+          <input type="radio" name="genero" value="1"/>
+          <label  class="formulario__item">Masculino</label>
+        </div>
+        <div>
+          <input type="radio" name="genero" value="1"/>
+          <label class="formulario__item">Femenino</label>
+        </div>
+        <div>
+          <input type="radio" name="genero" value="1"/>
+          <label class="formulario__item">Otro</label>
+        </div>
+      </fieldset>
+      <input type="submit" value="Enviar" class="formulario__item">
+      <input type="reset" value="Resetear" class="formulario__item">
+    </form>
+  </div>
+    <hr />
+
+  fieldset-----------------------------------------------------------------
+  <div class="formulario__cajita">
+    <fieldset class="formulario__item">
+        <legend  class="formulario__item">Genero</legend>
+        <div>
+            <input type="radio" name="genero" value="1"/>
+            <label  class="formulario__item">Masculino</label>
+        </div>
+        <div>
+            <input type="radio" name="genero" value="1"/>
+            <label class="formulario__item">Femenino</label>
+        </div>
+        <div>
+            <input type="radio" name="genero" value="1"/>
+            <label class="formulario__item">Otro</label>
+        </div>
+    </fieldset>
+</div>
+
+  la base de todo----------------------------------------------------------
+
+  <body>
+  <header>
+      <!-- imagen header -->
+      <img src="./../assets/images/header.jpg" class="header">
+      <!-- titulo -->
+      <h1 class="titulo">CÁMARA ARGENTINA DE COMERCIO</h1>
+  </header>
+  <nav>
+      <!-- barra navegadora -->
+      <ul class="menu">
+          <li class="menu__item"><a href="./../index.html" class="btn">Inicio</a></li>
+          <li class="menu__item"><a href="./Nosotros.html" class="btn">Nosotros</a></li>
+          <li class="menu__item"><a href="./Servicios.html" class="btn">Servicios</a></li>
+          <li class="menu__item"><a href="./Galeria.html" class="btn">Galería</a></li>
+          <li class="menu__item"><a href="./Dejanos-tu-CV.html" class="btn">Tu CV</a></li>
+      </ul>
+  </nav>
+  <section>
+      <!-- section -->    
+      <div class="columnaUno">
+          <section class="seccion"></section>
+      </div>
+  </section>
+  <aside>
+      <!-- aside -->
+      <div class="columnaDos">
+          <h2 class="subtitulo">NOS APOYAN</h2>
+          <aside class="aside">
+              <img src="./../assets/images/sponsor1.jpg" class="publicidad">
+              <img src="./../assets/images/sponsor2.jpg" class="publicidad">
+              <img src="./../assets/images/sponsor3.jpg" class="publicidad">
+          </aside>
+      </div>
+  </aside>
+  <footer>
+      <!-- Entidades vinculadas -->
+      <div>
+          <h2 class="subtitulo">ENTIDADES VINCULADAS A LA CÁMARA ARGENTINA DE COMERCIO</h2>
+          <div class="entidades">
+              <img src="./../assets/images/entidad1.jpg" class="entidades__img">
+              <img src="./../assets/images/entidad2.jpg" class="entidades__img">
+              <img src="./../assets/images/entidad3.jpg" class="entidades__img">
+          </div>
+      </div>
+      <hr/>
+      <!-- informacion util -->
+      <div class="info">
+          <ul class="info__dos"><h5>CÁMARA ARGENTINA DE COMERCIO</h5>
+              <li class="info__tres">Calle</li>
+              <li class="info__tres">Ciudad</li>
+              <li class="info__tres">Provincia</li>
+              <li class="info__tres">Ingreso interno</li>
+          </ul>
+          <ul class="info__dos"><h5>MEDIOS DE CONTACTO</h5>
+              <li class="info__tres">Teléfono</li>
+              <li class="info__tres">Email</li>
+              <li class="info__tres">Whatsapp</li>
+              <li class="info__tres">Horario</li>
+          </ul>
+          <ul class="info__dos"><h5>REDES SOCIALES</h5>
+              <li class="info__tres">Facebook</li>
+              <li class="info__tres">Instagram</li>
+              <li class="info__tres">Twitter</li>
+              <li class="info__tres">Youtube</li>
+          </ul>
+      </div>
+      <hr/>
+      <!-- Pie -->
+      <strong class="footer">Desarrollado por Emmanuel Kusmusk. 2022</strong>
+  </footer>
+</body>
+</html>
