@@ -6,11 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asociate</title>
     <link rel="stylesheet" href="./../styles/style.css">
+    <link rel="stylesheet" href="./../styles/bootstrap.min.css">
 </head>
 <body>
     <header>
         <!-- imagen header -->
-        <img src="./../assets/images/header.jpg" class="header">
+        <div class="container-fluid header">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./../assets/images/header.jpg" class="d-block w-100" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../assets/images/header.jpg" class="d-block w-100" alt="2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./../assets/images/header.jpg" class="d-block w-100" alt="3">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>>
         <!-- titulo -->
         <h1 class="titulo">CÁMARA ARGENTINA DE COMERCIO</h1>
     </header>
@@ -176,5 +198,6 @@
         <!-- Pie -->
         <strong class="footer">Desarrollado por Emmanuel Kusmusk. 2022</strong>
     </footer>
+    <script src="./../scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
