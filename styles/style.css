@@ -135,8 +135,10 @@ footer{
 }
 /* Información util */
 .info{
-    width: 100%;
-    height: 100px;
+    width: 90%;
+    height: 130px;
+    padding: 0px;
+    margin: 0px;
     display: inline-block;
     display: flex;
     flex-wrap: wrap;
@@ -146,8 +148,9 @@ footer{
 }
 .info__dos{
     width: 30%;
-    height: 90%;
-    margin: 5px 0px 8px 0px;
+    height: 120px;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
     list-style-type: none;
     display: flex;
@@ -158,7 +161,9 @@ footer{
 }
 /* footer */
 .footer{
-    text-align: end;
+    height: 40px;
+    margin-top: 10vh;
+    text-align: center;
     background-color: lightgray;
 }
 /* Letras */
@@ -174,9 +179,9 @@ footer{
 .ftexto{
     background-color: lightgray;
 }
-p{
+/*p{
     background-color: lightgray;
-}
+}*/
 strong {
     background-color: lightgray;
 }
@@ -260,8 +265,8 @@ margin-bottom: 10px;
     width: 100%;
     background-color: red;
 }
-/* pantalla hasta 480px */ 
-@media screen and (max-width: 480px) 
+/* pantalla hasta 783px (antes 480px) */ 
+@media screen and (max-width: 783px) 
 {
     body {
         display: flex;
@@ -298,7 +303,9 @@ margin-bottom: 10px;
     section {
         grid-area: section;
         flex-direction: column;
-        justify-content: space-evenly;
+        /*justify-content: center;
+        justify-items: center;*/
+        align-content: center;
     }
     aside {
         grid-area: publi;
