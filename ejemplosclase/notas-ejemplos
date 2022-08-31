@@ -161,3 +161,186 @@
   </footer>
 </body>
 </html>
+
+/* notas guardadas para mas adelante
+/* Grid 1
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav header header header"
+        "nav section section aside"
+        "nav section section aside"
+        "nav section section aside"
+        "footer footer footer aside"
+}
+.headerGrid{
+    grid-area: header;
+}
+.navGrid{
+    grid-area: nav;
+}
+.sectionGrid{
+    grid-area: section;
+}
+.asideGrid{
+    grid-area: aside;
+}
+.footerGrid{
+    grid-area: footer;
+}
+img{
+    width: 30%;
+}
+.borderRounded {
+    border-radius: 5px;
+}
+
+/* gradientes */
+/*
+.gradientes {
+    background-image: linear-gradient(to left, red, yellow);
+}
+div {
+    height: 100px;
+    margin-top: 20px;
+}
+*/
+
+/* transformacion */
+/*
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.cuadrado{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    border-color: gray;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+}
+.transformTranslate {
+    transform: translate(20px, 20px);
+}
+.transformRotate {
+    transform: rotate(45deg);
+}
+.transforSkew {
+    transform: skew(20deg, 10deg);
+}
+*/
+/*  transiciones */
+/*
+div {
+    height: 100px;
+    width: 100px;
+    transition: all 2s;
+    background-color: coral;
+    overflow: hidden;
+}
+div:hover {
+    height: 200px;
+    width: 200px;
+    transform: scale(2) translate(50px, 50px);
+    background-color: yellow;
+}
+*/
+/* animacion */
+/* 
+@keyframes miAnimacion {
+    0%{width: 100px;}
+    25%{width: 300px;}
+    50%{width: 100px; background-color: red;}
+    75%{width: 300px;}
+    100%{width: 100px; background-color: green;}
+}
+section {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: miAnimacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}*/
+/*
+@keyframes aparecer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+h1 {
+    animation-name: aparecer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}*/
+
+/* notas viejas
+
+/* estilo de letra 
+.italica {
+    font-style: italic;
+    }
+.redondeado {
+    border-radius: 10px;
+}
+.encabezado {
+    background-color: blue;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+p { font-family: "fuenteuno";}
+h1 { font-family: "fuenteuno";}
+h2 { font-family: "fuenteuno";}
+/* ID 
+#principal {
+    background-color: brown;
+    margin-top: 30px;
+}
+/* tarjeta
+.card {
+    width: 12%;
+    background-color: lightgray;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border: solid 1px black;
+}
+.card__image{
+    width: 96%;
+    margin-top: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.card__description{
+    overflow: hidden;}
+    */
+
+/* cuadricula 
+.padre {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: var(--mi-var);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.hijo {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border: solid 2px gray;
+}
+*/
