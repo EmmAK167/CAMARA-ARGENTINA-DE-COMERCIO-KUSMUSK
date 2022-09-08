@@ -8,39 +8,11 @@
   font-family: "fuenteuno";
   background-color: #1e96e6; }
 
-/* Cuerpo */
-body {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 3fr 1fr 4fr 2fr;
-  grid-template-areas: "header header header header" "nav nav nav nav" "content content content publi" "footer footer footer footer"; }
-
+/* header */
 header {
   display: grid;
   grid-area: header; }
 
-nav {
-  display: flex;
-  grid-area: nav;
-  flex-direction: row; }
-
-section {
-  display: flex;
-  grid-area: content;
-  padding: 10px; }
-
-aside {
-  display: flex;
-  grid-area: publi;
-  padding: 10px; }
-
-footer {
-  display: flex;
-  flex-direction: column;
-  grid-area: footer; }
-
-/* dentro del cuerpo */
 /* imagen header */
 .header {
   width: 100%; }
@@ -49,6 +21,12 @@ footer {
 .titulo {
   text-align: center;
   font-size: 40px; }
+
+/* nav */
+nav {
+  display: flex;
+  grid-area: nav;
+  flex-direction: row; }
 
 /* nav */
 .menu {
@@ -64,6 +42,12 @@ footer {
   background-color: lightgray;
   display: inline-block;
   margin: 20px; }
+
+/* section */
+section {
+  display: flex;
+  grid-area: content;
+  padding: 10px; }
 
 /* seccion */
 .seccion {
@@ -95,12 +79,11 @@ footer {
   background-color: lightgray;
   overflow: hidden; }
 
-/* boton */
-.btn {
-  background-color: lightgrey; }
-
-.btns {
-  background-color: lightgray; }
+/* aside */
+aside {
+  display: flex;
+  grid-area: publi;
+  padding: 10px; }
 
 /* publicidad */
 .aside {
@@ -112,6 +95,12 @@ footer {
   height: 300px;
   margin: 5px;
   border-style: groove; }
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  grid-area: footer; }
 
 /* entidades */
 .entidades {
@@ -160,6 +149,58 @@ footer {
   height: 40px;
   margin-top: 10vh;
   text-align: center;
+  background-color: lightgray; }
+
+/* pantalla hasta 783px (antes 480px) */
+@media screen and (max-width: 783px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    grid-template-areas: "header" "nav" "section" "publi" "pie"; }
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "himg" "titulo";
+    justify-items: center; }
+  header img {
+    grid-area: himg;
+    width: 100%;
+    height: 100%; }
+  header h1 {
+    grid-area: titulo; }
+  nav {
+    width: 100%;
+    grid-area: nav; }
+  section {
+    grid-area: section;
+    flex-direction: column;
+    /*justify-content: center;
+        justify-items: center;
+        align-content: center;*/ }
+  aside {
+    grid-area: publi;
+    flex-direction: column; }
+  footer {
+    grid-area: pie; }
+  section article iframe {
+    width: 100%;
+    height: 250px; } }
+
+/* Cuerpo */
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 1fr 4fr 2fr;
+  grid-template-areas: "header header header header" "nav nav nav nav" "content content content publi" "footer footer footer footer"; }
+
+/* boton */
+.btn {
+  background-color: lightgrey; }
+
+.btns {
   background-color: lightgray; }
 
 /* Letras */
@@ -260,40 +301,3 @@ strong {
 .cardd1:hover {
   background-color: black;
   border-style: double; }
-
-/* pantalla hasta 783px (antes 480px) */
-@media screen and (max-width: 783px) {
-  body {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5fr;
-    grid-template-areas: "header" "nav" "section" "publi" "pie"; }
-  header {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: "himg" "titulo";
-    justify-items: center; }
-  header img {
-    grid-area: himg;
-    width: 100%;
-    height: 100%; }
-  header h1 {
-    grid-area: titulo; }
-  nav {
-    width: 100%;
-    grid-area: nav; }
-  section {
-    grid-area: section;
-    flex-direction: column;
-    /*justify-content: center;
-        justify-items: center;
-        align-content: center;*/ }
-  aside {
-    grid-area: publi;
-    flex-direction: column; }
-  footer {
-    grid-area: pie; }
-  section article iframe {
-    width: 100%;
-    height: 250px; } }

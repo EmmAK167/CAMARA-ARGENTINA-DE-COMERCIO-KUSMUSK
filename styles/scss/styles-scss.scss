@@ -7,6 +7,12 @@
     font-family: "fuenteuno";
     background-color:  rgb(30, 150, 230);
 }
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/section";
+@import "./layout/aside";
+@import "./layout/footer";
+@import "./layout/mediaQueries";
 /* Cuerpo */
 body{
     height: 100vh;
@@ -19,151 +25,12 @@ body{
         "content content content publi"
         "footer footer footer footer";
 }
-header{
-    display: grid;
-    grid-area: header;
-}
-nav{
-    display: flex;
-    grid-area: nav;
-    flex-direction: row;
-}
-section{
-    display: flex;
-    grid-area: content;
-    padding: 10px;
-}
-aside{
-    display: flex;
-    grid-area: publi;
-    padding: 10px;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    grid-area: footer;
-}
-/* dentro del cuerpo */
-/* imagen header */
-.header{
-    width: 100%;
-}
-/* titulo principal */
-.titulo{
-    text-align: center;
-    font-size: 40px;
-}
-/* nav */
-.menu {
-    width: 100%;
-    background-color: lightgray;
-    font-size: 20px;
-    text-align: center;
-    line-height: 10px;
-}
-.menu__item{
-    width: 10%;
-    height: 90%;
-    background-color: lightgray;
-    display: inline-block;
-    margin: 20px;
-}
-/* seccion */
-.seccion{
-    flex-wrap: wrap;
-}
-.seccion__tarjeta{
-    width: 400px;
-    height: 550px;
-    background-color: lightgray;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border: solid 1px black;
-}
-.seccion__imagen{
-    background-color: lightgray;
-    width: 400px;
-    height: 400px;
-    margin: 1px;
-    padding: 1px;
-}
-.seccion__titulo{
-    background-color: lightgray;
-    text-decoration: underline;
-    text-align: center;
-}
-.seccion__noticia{
-    height: 80px;
-    background-color: lightgray;
-    overflow: hidden;
-}
 /* boton */
 .btn{
     background-color: lightgrey;
 }
 .btns{
     background-color:lightgray;
-}
-/* publicidad */
-.aside{
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-.publicidad{
-    width: 300px;
-    height: 300px;
-    margin: 5px;
-    border-style: groove;
-}
-/* entidades */
-.entidades{
-    width: 100%;
-    height: 125px;
-    background-color: lightgray;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-image: linear-gradient(to left, red, yellow);
-}
-.entidades__img{
-    width: 20%;
-    height: 90%;
-    padding: 0;
-    margin: 5px 20px 5px 20px;
-}
-/* Información util */
-.info{
-    width: 100%;
-    height: 130px;
-    padding: 0px;
-    margin: 0px;
-    display: inline-block;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-}
-.info__dos{
-    width: 30%;
-    height: 120px;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-}
-.info__tres{
-    text-align: center;
-}
-/* footer */
-.footer{
-    height: 40px;
-    margin-top: 10vh;
-    text-align: center;
-    background-color: lightgray;
 }
 /* Letras */
 .subtitulo{
@@ -263,57 +130,4 @@ margin-bottom: 10px;
 .cardd1:hover {
     background-color: black;
     border-style: double;
-}
-/* pantalla hasta 783px (antes 480px) */ 
-@media screen and (max-width: 783px) 
-{
-    body {
-        display: flex;
-        flex-wrap: wrap;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5fr;
-        grid-template-areas: 
-            "header"
-            "nav"
-            "section"
-            "publi"
-            "pie";
-    }
-    header {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
-        grid-template-areas:
-            "himg"
-            "titulo";
-        justify-items: center;
-    }
-    header img {
-        grid-area: himg;
-        width: 100%;
-        height: 100%;
-    }
-    header h1 {
-        grid-area: titulo;
-    }
-    nav {
-        width: 100%;
-        grid-area: nav;
-    }
-    section {
-        grid-area: section;
-        flex-direction: column;
-        /*justify-content: center;
-        justify-items: center;
-        align-content: center;*/
-    }
-    aside {
-        grid-area: publi;
-        flex-direction: column;
-    }
-    footer {
-        grid-area: pie;
-    }
-    section article iframe {
-        width: 100%;
-        height: 250px;}
 }

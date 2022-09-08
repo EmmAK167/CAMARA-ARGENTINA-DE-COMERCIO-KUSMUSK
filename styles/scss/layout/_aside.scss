@@ -1,0 +1,17 @@
+/* aside */
+aside{
+    display: flex;
+    grid-area: publi;
+    padding: 10px;
+}
+/* publicidad */
+.aside{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.publicidad{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    border-style: groove;
+}

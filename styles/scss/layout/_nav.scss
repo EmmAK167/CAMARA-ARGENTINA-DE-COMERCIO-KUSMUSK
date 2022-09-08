@@ -1,0 +1,21 @@
+/* nav */
+nav{
+    display: flex;
+    grid-area: nav;
+    flex-direction: row;
+}
+/* nav */
+.menu {
+    width: 100%;
+    background-color: lightgray;
+    font-size: 20px;
+    text-align: center;
+    line-height: 10px;
+}
+.menu__item{
+    width: 10%;
+    height: 90%;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 20px;
+}
