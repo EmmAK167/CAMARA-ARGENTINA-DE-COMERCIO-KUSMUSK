@@ -5,7 +5,6 @@
     padding: 0px;
     margin: 0px;
     font-family: "fuenteuno";
-    background-color:  rgb(30, 150, 230);
 }
 @import "./layout/header";
 @import "./layout/nav";
@@ -109,13 +108,15 @@ margin-bottom: 10px;
     flex-direction: column;
 }
 .seccionVideo__articulo{
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 .video{
     align-self: center;
     padding: 2px;
     margin: 2px;
+    width: 100%;
+    height: 65vh;
 }
 /* imagen */
 .imagen{
@@ -130,6 +131,45 @@ margin-bottom: 10px;
 .cardd1:hover {
     background-color: black;
     border-style: double;
+}
+/* map al footer */
+$redes: (
+    facebook: blue,
+    instagram: #e038a8,
+    twitter:rgb(89, 155, 209),
+    youtube: red
+);
+.fa-facebook {
+    background-color: blue;
+    font-style: italic;
+}
+.fa-instagram {
+    background-color:#e038a8;
+    font-style: italic;
+}
+.fa-twitter {
+    background-color: rgb(89, 155, 209);
+    font-style: italic;
+}
+.fa-youtube {
+    background-color: red;
+    font-style: italic;
+}
+/* map-get */ 
+.info .info__dos .pmg {
+    background-color: map-get($redes, twitter)
+}
+/* extend al footer*/
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+    @extend %iconosredes;
+}
+/* mixin al footer*/
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+.info__tres {
+    @include tamanos(100%, 100%)
 }
 /* pantalla hasta 783px (antes 480px) */ 
 @media screen and (max-width: 783px) 
@@ -183,43 +223,4 @@ margin-bottom: 10px;
     section article iframe {
         width: 100%;
         height: 250px;}
-}
-/* map al footer */
-$redes: (
-    facebook: blue,
-    instagram: #e038a8,
-    twitter:rgb(89, 155, 209),
-    youtube: red
-);
-.fa-facebook {
-    background-color: blue;
-    font-style: italic;
-}
-.fa-instagram {
-    background-color:#e038a8;
-    font-style: italic;
-}
-.fa-twitter {
-    background-color: rgb(89, 155, 209);
-    font-style: italic;
-}
-.fa-youtube {
-    background-color: red;
-    font-style: italic;
-}
-/* map-get */ 
-.info .info__dos .pmg {
-    background-color: map-get($redes, twitter)
-}
-/* extend al footer*/
-.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
-    @extend %iconosredes;
-}
-/* mixin al footer*/
-@mixin tamanos($ancho, $alto) {
-    width: $ancho;
-    height: $alto;
-}
-.info__tres {
-    @include tamanos(100%, 100%)
 }
