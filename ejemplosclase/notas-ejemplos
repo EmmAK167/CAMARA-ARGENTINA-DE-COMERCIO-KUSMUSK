@@ -344,3 +344,79 @@ h2 { font-family: "fuenteuno";}
     border: solid 2px gray;
 }
 */
+/*map
+
+$redes: (
+    facebook: blue,
+    instagram: pink,
+    whatsapp: green
+)
+
+.fa-facebook {
+    background-color: blue;
+}
+
+.fa-instagram {
+    background-color: pink;
+}
+
+.fa-whatsapp {
+    background-color: green;
+}
+
+/*
+/* map al footer */
+$redes: (
+    facebook: blue,
+    instagram: #e038a8,
+    twitter:rgb(89, 155, 209),
+    youtube: red
+);
+.fa-facebook {
+    background-color: blue;
+    font-style: italic;
+}
+.fa-instagram {
+    background-color:#e038a8;
+    font-style: italic;
+}
+.fa-twitter {
+    background-color: rgb(89, 155, 209);
+    font-style: italic;
+}
+.fa-youtube {
+    background-color: red;
+    font-style: italic;
+}
+/* extend al footer*/
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+    @extend %iconosredes;
+}
+/* mixin al footer*/
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+.info__tres {
+    @include tamanos(100%, 100%)
+}
+/*
+@mixin flex($direction, $justify, $aling) {
+    display: flex;
+    flex-drirection: $direction;
+    justify-content: $justify;
+    aling-itmes: $aling;
+}
+.clasetal {
+    @include flex(column, centter, space-around)
+}
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: red;
+    padding-block: 1rem;
+}
+.clasetal {
+    @include flex-center-center();
+}

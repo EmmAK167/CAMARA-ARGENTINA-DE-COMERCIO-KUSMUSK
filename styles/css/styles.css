@@ -151,6 +151,12 @@ footer {
   text-align: center;
   background-color: lightgray; }
 
+/* extend placeholder */
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+  border-radius: 5px; }
+  .fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-youtube:hover {
+    background-color: white; }
+
 /* Cuerpo */
 body {
   height: 100vh;
@@ -301,3 +307,30 @@ strong {
   section article iframe {
     width: 100%;
     height: 250px; } }
+
+/* map al footer */
+.fa-facebook {
+  background-color: blue;
+  font-style: italic; }
+
+.fa-instagram {
+  background-color: #e038a8;
+  font-style: italic; }
+
+.fa-twitter {
+  background-color: #599bd1;
+  font-style: italic; }
+
+.fa-youtube {
+  background-color: red;
+  font-style: italic; }
+
+/* map-get */
+.info .info__dos .pmg {
+  background-color: #599bd1; }
+
+/* extend al footer*/
+/* mixin al footer*/
+.info__tres {
+  width: 100%;
+  height: 100%; }

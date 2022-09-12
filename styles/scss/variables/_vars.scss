@@ -1,1 +1,7 @@
-$bg-header: red
+/* extend placeholder */
+%iconosredes {
+    border-radius: 5px;
+    &:hover{
+        background-color: white;
+    }
+}

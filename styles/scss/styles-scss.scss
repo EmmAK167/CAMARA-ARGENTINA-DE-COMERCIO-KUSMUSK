@@ -12,6 +12,7 @@
 @import "./layout/section";
 @import "./layout/aside";
 @import "./layout/footer";
+@import "./variables/vars";
 /* Cuerpo */
 body{
     height: 100vh;
@@ -182,4 +183,43 @@ margin-bottom: 10px;
     section article iframe {
         width: 100%;
         height: 250px;}
+}
+/* map al footer */
+$redes: (
+    facebook: blue,
+    instagram: #e038a8,
+    twitter:rgb(89, 155, 209),
+    youtube: red
+);
+.fa-facebook {
+    background-color: blue;
+    font-style: italic;
+}
+.fa-instagram {
+    background-color:#e038a8;
+    font-style: italic;
+}
+.fa-twitter {
+    background-color: rgb(89, 155, 209);
+    font-style: italic;
+}
+.fa-youtube {
+    background-color: red;
+    font-style: italic;
+}
+/* map-get */ 
+.info .info__dos .pmg {
+    background-color: map-get($redes, twitter)
+}
+/* extend al footer*/
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+    @extend %iconosredes;
+}
+/* mixin al footer*/
+@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+.info__tres {
+    @include tamanos(100%, 100%)
 }
