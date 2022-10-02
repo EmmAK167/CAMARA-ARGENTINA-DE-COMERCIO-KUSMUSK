@@ -111,23 +111,22 @@ footer {
 /* entidades */
 .entidades {
   width: 100%;
-  height: 125px;
-  background-color: lightgray;
+  /*min-height: 125px;*/
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  background-image: linear-gradient(to left, red, yellow); }
+  /*background-image: linear-gradient(to left, red, yellow);*/ }
 
 .entidades__img {
   width: 20%;
-  height: 90%;
+  /*min-height: 90%;*/
   padding: 0;
   margin: 5px 20px 5px 20px; }
 
 /* Información util */
 .info {
   width: 100%;
-  height: 130px;
+  /*min-height: 130px;*/
   padding: 0px;
   margin: 0px;
   display: inline-block;
@@ -135,11 +134,12 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #F4F4F2; }
 
 .info__dos {
   width: 30%;
-  height: 120px;
+  /*min-height: 120px;*/
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -152,17 +152,13 @@ footer {
 
 /* footer */
 .footer {
-  height: 40px;
-  margin-top: 10vh;
+  /*min-height: 40px;*/
+  margin-top: 1vh;
   text-align: center;
-  background-color: lightgray; }
+  background-color: #F4F4F2; }
 
 /* extend placeholder */
-.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
-  border-radius: 5px; }
-  .fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-youtube:hover {
-    background-color: white; }
-
+/* lo desactivo porue no me gusta para este sitio web*/
 /* Cuerpo */
 body {
   height: 100vh;
@@ -279,35 +275,48 @@ strong {
   background-color: black;
   border-style: double; }
 
+/* las siguientes caracteristicas se usaron para las entregas anteriores pero no me gustan para el proyecto final por eso estan desactivadas */
 /* map al footer */
+/*$redes: (
+    facebook: blue,
+    instagram: #e038a8,
+    twitter:rgb(89, 155, 209),
+    youtube: red
+);
 .fa-facebook {
-  background-color: blue;
-  font-style: italic; }
-
+    background-color: blue;
+    font-style: italic;
+}
 .fa-instagram {
-  background-color: #e038a8;
-  font-style: italic; }
-
+    background-color:#e038a8;
+    font-style: italic;
+}
 .fa-twitter {
-  background-color: #599bd1;
-  font-style: italic; }
-
+    background-color: rgb(89, 155, 209);
+    font-style: italic;
+}
 .fa-youtube {
-  background-color: red;
-  font-style: italic; }
-
+    background-color: red;
+    font-style: italic;
+}
 /* map-get */
-.info .info__dos .pmg {
-  background-color: #599bd1; }
-
+/*.info .info__dos .pmg {
+    background-color: map-get($redes, twitter)
+}
 /* extend al footer*/
+/*.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+    @extend %iconosredes;
+}
 /* mixin al footer*/
+/*@mixin tamanos($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
 .info__tres {
-  width: 100%;
-  height: 100%; }
-
-/* pantalla hasta 783px (antes 480px) */
-@media screen and (max-width: 783px) {
+    @include tamanos(100%, 100%)
+}
+/* pantalla hasta 1024px */
+@media screen and (max-width: 1024px) {
   body {
     display: flex;
     flex-wrap: wrap;
@@ -315,25 +324,12 @@ strong {
     grid-template-rows: 5fr;
     grid-template-areas: "header" "nav" "section" "publi" "pie"; }
   header {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas: "himg" "titulo";
-    justify-items: center; }
-  header img {
-    grid-area: himg;
-    width: 100%;
-    height: 100%; }
-  header h1 {
-    grid-area: titulo; }
+    grid-area: header; }
   nav {
-    width: 100%;
-    grid-area: nav; }
+    grid-area: nav;
+    width: 100%; }
   section {
-    grid-area: section;
-    flex-direction: column;
-    /*justify-content: center;
-        justify-items: center;
-        align-content: center;*/ }
+    grid-area: section; }
   aside {
     grid-area: publi;
     flex-direction: column; }

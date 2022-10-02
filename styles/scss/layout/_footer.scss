@@ -8,23 +8,22 @@ footer{
 /* entidades */
 .entidades{
     width: 100%;
-    height: 125px;
-    background-color: lightgray;
+    /*min-height: 125px;*/
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    background-image: linear-gradient(to left, red, yellow);
+    /*background-image: linear-gradient(to left, red, yellow);*/
 }
 .entidades__img{
     width: 20%;
-    height: 90%;
+    /*min-height: 90%;*/
     padding: 0;
     margin: 5px 20px 5px 20px;
 }
 /* Información util */
 .info{
     width: 100%;
-    height: 130px;
+    /*min-height: 130px;*/
     padding: 0px;
     margin: 0px;
     display: inline-block;
@@ -33,10 +32,11 @@ footer{
     flex-direction: row;
     align-content: center;
     align-items: center;
+    background-color: #F4F4F2;
 }
 .info__dos{
     width: 30%;
-    height: 120px;
+    /*min-height: 120px;*/
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -49,8 +49,8 @@ footer{
 }
 /* footer */
 .footer{
-    height: 40px;
-    margin-top: 10vh;
+    /*min-height: 40px;*/
+    margin-top: 1vh;
     text-align: center;
-    background-color: lightgray;
+    background-color: #F4F4F2;
 }
